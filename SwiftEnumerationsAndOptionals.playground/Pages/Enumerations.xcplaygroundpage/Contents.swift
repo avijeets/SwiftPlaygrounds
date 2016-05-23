@@ -24,8 +24,8 @@ let isMuted = muteNotifications(result)
 much more efficient way of handling this problem
 */
  
-enum Day { //enums are usually singular (Day)
-    case Monday
+enum Day: Int { //enums are usually singular (Day), Int used for day count
+    case Monday = 1
     case Tuesday
     case Wednesday
     case Thursday
@@ -34,6 +34,8 @@ enum Day { //enums are usually singular (Day)
     case Sunday
 }
 
+Day.Monday.rawValue // raw value returns 1, which has been declared
+Day.Friday.rawValue // raw value returns 5, which doesn't need to be declared
 
 enum DayType {
     case Weekday, Weekend // don't have to write case every time, can be separated by commas
@@ -77,4 +79,48 @@ enum ColorComponents {
 }
 
 ColorComponents.RGB(red: 61.0, green: 120.0, blue: 198.0, alpha: 1.0).color()
+
+
+// Raw Values (default vals)
+
+enum Coin: Double {
+    case Penny = 0.01
+    case Nickel = 0.05
+    case Dime = 0.1
+    case Quarter = 0.25
+}
+
+let coins: [Coin] = [.Penny, .Nickel, .Dime, .Dime, .Quarter, .Quarter, .Quarter]
+
+func totalValue(coins: [Coin]) -> Double {
+    var total: Double = 0
+    for coin in coins {
+        total += coin.rawValue //used when you always have a default value, can only be certain data types
+    }
+    return total
+}
+
+totalValue(coins)
+
+enum HTTPMethod: String {
+    case POST, GET, PUT, DELETE
+}
+
+HTTPMethod.GET.rawValue //string literal that represents underlying enum case because it wasn't initialized
+
+enum HTTPStatusCodes: Int {
+    case Continue = 100
+    case Success = 200
+    case Unauthorized = 401
+    case Forbidden = 403
+    case NotFound = 404
+}
+
+let statusCode = 200
+if let httpCode = HTTPStatusCodes(rawValue: statusCode) { // to catch success cases
+    print(httpCode)
+}
+
+
+
 

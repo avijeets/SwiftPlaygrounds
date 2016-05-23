@@ -3,5 +3,7 @@
     <pages>
         <page name='Optionals'/>
         <page name='Enumerations'/>
+        <page name='OptionalChaining'/>
+        <page name='PatternMatching'/>
     </pages>
 </playground>
