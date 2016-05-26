@@ -4,10 +4,11 @@ SwiftPlaygrounds
 This was written to help teach Swift to people coming from other languages by going over all of the concepts of the language, from basic bitwise operations to data strucutres.
 
 Order to follow: 
-    1. SwiftBasics
-    2. CollectionsAndControlFlow
-    3. SwiftFunctions
-    4. ObjectOrientedSwift
-    5. SwiftEnumerationsAndOptionals
-    6. Protocols
-    7. ErrorHandling
+
+1. SwiftBasics
+2. CollectionsAndControlFlow
+3. SwiftFunctions
+4.	ObjectOrientedSwift
+5. 	SwiftEnumerationsAndOptionals
+6.	Protocols
+7. 	ErrorHandling
