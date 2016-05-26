@@ -1,0 +1,4 @@
+SwiftPlaygrounds
+---
+
+This was written to help teach Swift to people coming from other languages by going over all of the concepts of the language, from basic bitwise operations to data strucutres.
