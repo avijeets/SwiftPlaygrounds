@@ -12,3 +12,4 @@ Order to follow:
 5. 	SwiftEnumerationsAndOptionals
 6.	Protocols
 7. 	ErrorHandling
+8.  TypeCasting
