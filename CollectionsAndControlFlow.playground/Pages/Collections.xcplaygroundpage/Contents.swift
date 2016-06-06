@@ -9,7 +9,7 @@ todo += ["Order book online"]
 
 let secondTaskList = ["Mow the lawn"]
 
-//readomg from arrays
+//reading from arrays
 
 let firstTask = todo[0]
 let thirdTask = todo[2]

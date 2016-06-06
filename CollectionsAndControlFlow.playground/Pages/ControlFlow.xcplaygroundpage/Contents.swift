@@ -11,7 +11,7 @@ for task in todo {
     print(task)
 }
 
-// Ramge Operators
+// Range Operators
 
 for number in 1...10 {
     print("\(number) times 5 is equal to \(number * 5)")
@@ -23,7 +23,7 @@ for number in 1...10 {
 var index = 0
 while index < todo.count {
     print(todo[index])
-    index++
+    index+=1
 }
 
 // Repeat While
@@ -32,10 +32,10 @@ var counter = 1
 
 while counter < 1 {
     print ("I'm inside the while loop")
-    counter++
+    counter+=1
 }
 repeat {
     print ("I'm inside the repeat loop")
-    counter++
+    counter+=1
 }
 while counter < 1

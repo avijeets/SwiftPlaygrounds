@@ -4,5 +4,6 @@
         <page name='Collections'/>
         <page name='ControlFlow'/>
         <page name='ControlFlow2'/>
+        <page name='FizzBuzz'/>
     </pages>
 </playground>
